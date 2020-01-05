@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+
+ @font-face{
+   font-family: "hoge";
+   src: font-url('しらさぎ本丸ゴシックMini.otf') format('truetype');
+ }
+ 
+body{
+  font-family: 'hoge';
+}

@@ -1,0 +1,6 @@
+<% @bquestions.each do |bquestion| %>
+  <p><%= bquestion.number %></p>
+  <p><%= bquestion.title %></p>
+  <p><%= bquestion.text %></p>
+  <%= link_to '解答', "/banswers/#{ bquestion.id }" %> <!--それぞれの問題のidを取得した--!>
+<% end %>

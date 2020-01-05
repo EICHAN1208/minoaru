@@ -1,0 +1,54 @@
+// Place all the styles related to the aanswers controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.ans{
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+
+.answer{
+  font-size: 50px;
+  text-decoration: underline;
+  font-weight: bold;
+  text-align: center; 
+  padding-top: 40px;
+}
+
+.box1 {
+    font-size: 20px;
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    border: solid 3px #000000;
+    border-radius: 10px;/*角の丸み*/
+    width: 600px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;  /*ブロック要素に対しての中央寄せ*/
+}
+
+.ans_btn {
+  display: block;
+  width: 100px;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: black;/*ボタン色*/
+  color: white;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+  margin: 10px auto;  /*ブロック要素にすることで適応する*/
+}
+.ans_btn:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+
+.ans_btn a{
+  display: block;  /*中央寄せするため*/
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}

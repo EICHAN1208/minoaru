@@ -1,0 +1,2 @@
+class Aquestion < ApplicationRecord
+end

@@ -1,0 +1,17 @@
+<div class="content1">
+  <% @aquestions.each do |aquestion| %>
+    <div class="block">
+      <div class="title">
+        <p>Q<%= aquestion.number %><span>(<%= aquestion.title %>)</span></p>
+      </div>
+      
+      <div class="text">
+        <p><%= simple_format(aquestion.text) %></p>
+      </div>
+      
+      <div class="response">
+        <a><%= link_to '解答', "/aanswers/#{ aquestion.id }" %></a>
+      </div>
+    </div>
+  <% end %>
+</div>

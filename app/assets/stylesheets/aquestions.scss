@@ -1,0 +1,50 @@
+// Place all the styles related to the aquestions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.content1{
+  width: 100%;
+  padding-bottom: 90px;
+}
+
+.block{
+  margin: 50px auto;
+  width: 700px;
+}
+.text{
+  padding: 0.5em 1em;
+  border: solid 3px #000000;
+  border-radius: 10px;  /*角の丸み*/
+  height: 70px;  /*枠の高さ*/
+}
+
+.title p{
+  font-size: 20px;
+}
+
+.response {
+  display: block;
+  width: 100px;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: black;/*ボタン色*/
+  color: white;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+  margin: 10px auto;  /*ブロック要素にすることで適応する*/
+}
+
+.response:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+
+.response a{
+  display: block;  /*中央寄せするため*/
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
