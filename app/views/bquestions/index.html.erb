@@ -1,6 +1,20 @@
-<% @bquestions.each do |bquestion| %>
-  <p><%= bquestion.number %></p>
-  <p><%= bquestion.title %></p>
-  <p><%= bquestion.text %></p>
-  <%= link_to '解答', "/banswers/#{ bquestion.id }" %> <!--それぞれの問題のidを取得した--!>
-<% end %>
+<div class="content1">
+  <% @bquestions.each do |bquestion| %>
+    <div class="block">
+      <div class="title">
+        <p>Q<%= bquestion.id %></p>
+      </div>
+      
+      <div class="text">
+        <p><%= simple_format(bquestion.text) %></p>
+      </div>
+      
+      <div class="response">
+        <a><%= link_to '解答', "/banswers/#{ bquestion.id }" %></a>
+      </div>
+    </div>
+  <% end %>
+  <div class="paginate">
+  <%= paginate(@bquestions) %>
+  </div>
+</div>

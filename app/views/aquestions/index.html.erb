@@ -2,7 +2,7 @@
   <% @aquestions.each do |aquestion| %>
     <div class="block">
       <div class="title">
-        <p>Q<%= aquestion.number %><span>(<%= aquestion.title %>)</span></p>
+        <p>Q<%= aquestion.id %></p>
       </div>
       
       <div class="text">
@@ -14,4 +14,7 @@
       </div>
     </div>
   <% end %>
+  <div class="paginate">
+  <%= paginate(@aquestions) %>
+  </div>
 </div>

@@ -5,6 +5,7 @@
 .ans{
   margin-right: auto;
   margin-left: auto;
+  padding-bottom: 90px;
   width: 100%;
 }
 
@@ -31,13 +32,12 @@
 .ans_btn {
   display: block;
   width: 100px;
-  padding: 0.5em 1em;
   text-decoration: none;
   background: black;/*ボタン色*/
   color: white;
   border-bottom: solid 4px #627295;
   border-radius: 3px;
-  margin: 10px auto;  /*ブロック要素にすることで適応する*/
+  margin: 10px auto 30px auto;  /*ブロック要素にすることで適応する*/
 }
 .ans_btn:active {
   /*ボタンを押したとき*/
@@ -51,4 +51,5 @@
   color: white;
   text-decoration: none;
   text-align: center;
+  line-height: 40px;
 }

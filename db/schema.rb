@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_03_043405) do
+ActiveRecord::Schema.define(version: 2020_01_05_115824) do
 
   create_table "aanswers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.text "text"
@@ -23,8 +23,6 @@ ActiveRecord::Schema.define(version: 2020_01_03_043405) do
     t.text "text"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "title"
-    t.integer "number"
   end
 
   create_table "banswers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -36,8 +34,6 @@ ActiveRecord::Schema.define(version: 2020_01_03_043405) do
 
   create_table "bquestions", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.text "text"
-    t.string "title"
-    t.integer "number"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

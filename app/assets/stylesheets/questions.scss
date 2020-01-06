@@ -24,10 +24,7 @@
 }
 
 .response {
-  display: block;
   width: 100px;
-  padding: 0.5em 1em;
-  text-decoration: none;
   background: black;/*ボタン色*/
   color: white;
   border-bottom: solid 4px #627295;
@@ -43,8 +40,14 @@
 }
 
 .response a{
-  display: block;  /*中央寄せするため*/
+  display: block;
   color: white;
   text-decoration: none;
   text-align: center;
+  line-height: 40px;
+}
+
+.paginate{
+  text-align: center;
+  margin: 20px 0px;
 }

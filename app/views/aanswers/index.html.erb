@@ -1,11 +1,11 @@
 <div class="ans">
   
   <div class="answer">
-    <p><span>A.  </span><%= @aanswer.text %><p>
+    <p><span>A.  <%= @aanswer.text %></span><p>
   </div>
     
   <div class="box1">
-    <p><%= @aanswer.exp %><p>
+    <p><%= simple_format(@aanswer.exp) %><p>
   </div>
   
   <div class="ans_btn">
