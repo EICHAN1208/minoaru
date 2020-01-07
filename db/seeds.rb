@@ -6,6 +6,4 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Tops.create!(
-   text: 'テスト',
-)
+Top.create(text: 'テスト', image: 'テスト')
