@@ -6,8 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Top.create(text: 'テスト', image: 'テスト')
-
 Aquestion.create(id: 1, text: '消防職員や消防本部を置かない市町村は立入検査をどうしているか？')
 Aquestion.create(id: 2, text: '自衛消防組織が必要な防火対象物で、管理の権限を持つ者が複数いるとき、誰が自衛消防組織を置くか？')
 Aquestion.create(id: 3, text: '管理権限者が防火管理者を定めたとき届出を何日以内にしなければならないか？')
