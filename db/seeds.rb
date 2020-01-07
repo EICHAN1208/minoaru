@@ -7,3 +7,5 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Top.create(text: 'テスト', image: 'テスト')
+
+Aquestion.create(id: 1, text: '消防職員や消防本部を置かない市町村は立入検査をどうしているか？')
