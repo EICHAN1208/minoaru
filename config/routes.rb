@@ -9,4 +9,7 @@ Rails.application.routes.draw do
   get 'banswers/:id' => 'banswers#index' #それぞれの問題の解答ボタンが押されると問題のidに応じたリンクへ飛ぶ
   
   get 'kakomons' => 'kakomons#index'
+  get 'kakomons/new' => 'kakomons#new'     #過去問の投稿画面
+  post  'kakomons'    =>  'kakomons#create'
+  
 end
