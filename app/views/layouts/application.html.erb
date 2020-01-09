@@ -13,7 +13,27 @@
   <body>
   <div class="wrapper">
     <header>
-      <h1 class="headline"><a><i class="fas fa-apple-alt"></i>やさしい炎</a><span>〜消防昇任試験対策〜</span></h1>
+      
+      
+      
+      <h1 class="headline">
+        <a><i class="fas fa-apple-alt"></i>やさしい炎</a><span>〜消防昇任試験対策〜</span>
+        
+        <div class="devise">
+          <% if user_signed_in? %>  
+            <div class="logout">
+              <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+            </div>
+          <% else %>
+            <div class="login">
+              <%= link_to "ログイン", new_user_session_path, class: 'post' %>
+              <%= link_to "新規登録", new_user_registration_path, class: 'post' %>
+            </div>
+          <% end %>
+        </div>
+        
+      </h1>
+      
         <ul class="list">
           <li class="list-item"><a href="/tops">トップ</a></li>
           <li class="list-item"><a href="/aquestions">消防法</a></li>
