@@ -98,3 +98,12 @@ footer{
     bottom: 0;
 }
  
+ 
+@font-face{
+   font-family: "hoge";
+   src: font-url('azuki.ttf') format('truetype');
+ }
+ 
+body{
+  font-family: 'hoge';
+}
