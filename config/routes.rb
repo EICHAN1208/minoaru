@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   get 'aanswers/:id' => 'aanswers#index' #それぞれの問題の解答ボタンが押されると問題のidに応じたリンクへ飛ぶ
   get 'bquestions' => 'bquestions#index'
   get 'banswers/:id' => 'banswers#index' #それぞれの問題の解答ボタンが押されると問題のidに応じたリンクへ飛ぶ
+  
+  get 'kakomons' => 'kakomons#index'
 end

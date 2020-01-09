@@ -1,0 +1,2 @@
+class Kakomon < ApplicationRecord
+end
