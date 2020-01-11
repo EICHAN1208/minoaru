@@ -37,12 +37,20 @@
         
       </h1>
       
+      <% unless user_signed_in? %>
         <ul class="list">
           <li class="list-item"><a href="/tops">トップ</a></li>
           <li class="list-item"><a href="/aquestions">消防法</a></li>
           <li class="list-item"><a href="/bquestions">消防組織法</a></li>
           <li class="list-item"><a href="/kakomons">カコ問シェア</a></li>
         </ul>
+        <% else %>
+          <ul class="list">
+          <li class="list-item"><a href="/aquestions">消防法</a></li>
+          <li class="list-item"><a href="/bquestions">消防組織法</a></li>
+          <li class="list-item"><a href="/kakomons">カコ問シェア</a></li>
+        </ul>
+        <% end %>
     </header>
     
     <%= yield %>
