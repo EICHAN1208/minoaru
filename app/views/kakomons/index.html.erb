@@ -8,6 +8,9 @@
       <div class="text">
         <p><%= simple_format(kakomon.text) %></p>
       </div>
+      <span class="name">
+          <span>投稿者:</span><%= kakomon.user.nickname %>
+      </span>
       
     </div>
   <% end %>
