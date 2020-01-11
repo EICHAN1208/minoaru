@@ -17,12 +17,15 @@
       
       
       <h1 class="headline">
-        <a><i class="fas fa-burn"></i>やさしい炎</a><span>〜消防昇任試験対策〜</span>
+        <a><i class="fas fa-burn"></i>やさしい炎</a><span>消防昇任試験対策</span>
         
         <div class="devise">
           <% if user_signed_in? %>  
             <div class="logout">
+              <a href="/users/<%= current_user.id %>">マイページ</a>
+              <a class="post" href="/kakomons/new">カコ問シェア投稿</a>
               <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+              <span><%= current_user.nickname %></span>
             </div>
           <% else %>
             <div class="login">

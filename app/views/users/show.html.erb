@@ -1,9 +1,7 @@
+<p><%= @nickname %>さんの投稿一覧</p>
 <div class="content1">
   <% @kakomons.each do |kakomon| %>
     <div class="block">
-      <div class="title">
-        <p><%= kakomon.prefecture %></p>
-      </div>
       
       <div class="text">
         <p><%= simple_format(kakomon.text) %></p>
@@ -11,7 +9,4 @@
       
     </div>
   <% end %>
-  <div class="paginate">
-  <%= paginate(@kakomons) %>
-  </div>
 </div>
