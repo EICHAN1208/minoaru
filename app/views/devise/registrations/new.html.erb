@@ -18,7 +18,7 @@
     <p><%= f.label :パスワード %></p>
     <p><% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> 文字以上)</em>
-    <% end %><br /></p>
+       <% end %><br /></p>
     <%= f.password_field :password, autocomplete: "new-password" %>
   </div>
 
@@ -28,9 +28,10 @@
   </div>
 
   <div class="actions">
-    <a><%= f.submit "登録する" %></a>
+    <p><%= f.submit "登録する" %></p>
+    <p><%= render "devise/shared/links" %></p>
   </div>
 <% end %>
 </div>
 
-<%= render "devise/shared/links" %>
+
