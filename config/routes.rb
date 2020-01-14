@@ -12,5 +12,8 @@ Rails.application.routes.draw do
   get 'kakomons/new' => 'kakomons#new'     #過去問の投稿画面
   post  'kakomons'    =>  'kakomons#create'
   get   'users/:id'   =>  'users#show'
+  delete  'kakomons/:id'  => 'kakomons#destroy'
+  get   'kakomons/:id/edit'  => 'kakomons#edit'
+  patch   'kakomons/:id'  => 'kakomons#update'
   
 end

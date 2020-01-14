@@ -109,13 +109,15 @@ body{
 }
 
 
-// サインアップ画面
+// 新規登録画面
+
 .sign_up h2{
   text-align: center;
+  margin: 40px 0;
 }
 
 .field{
-  margin: 10px auto;
+  margin: 30px auto;
 }
 
 .field p{
@@ -128,7 +130,72 @@ body{
   text-align: center;
 }
 
+input#user_nickname{
+  width: 200px;
+  height: 25px;
+  font-size: 20px;
+}
+
+input#user_email{
+  width: 250px;
+  height: 25px;
+  font-size: 20px;
+}
+
+input#user_password{
+  width: 250px;
+  height: 25px;
+  font-size: 20px;
+}
+
+input#user_password_confirmation{
+  width: 250px;
+  height: 25px;
+  font-size: 20px;
+}
+
+
 // ログイン画面
+.log_in{
+  
+}
+
 .log_in h2{
   text-align: center;
+  margin: 40px 0px;
+}
+
+input.user_email{
+  font-size:3em;
+}
+
+//　投稿が完了しました
+.toukou{
+  text-align: center;
+  margin: 40px 0px;
+}
+
+.toukou h3{
+  margin-bottom: 40px;
+}
+
+
+//　更新が完了しました
+.kousin{
+  text-align: center;
+  margin: 40px 0px;
+}
+
+.kousin h3{
+  margin-bottom: 40px;
+}
+
+//　削除が完了しました
+.sakuzyo{
+  text-align: center;
+  margin: 40px 0px;
+}
+
+.sakuzyo h3{
+  margin-bottom: 40px;
 }

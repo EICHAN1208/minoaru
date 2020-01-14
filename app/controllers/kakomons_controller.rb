@@ -11,6 +11,24 @@ class KakomonsController < ApplicationController
     Kakomon.create(text: kakomon_params[:text], prefecture: kakomon_params[:prefecture], user_id: current_user.id)
   end
   
+  def destroy
+    kakomon = Kakomon.find(params[:id])
+    if kakomon.user_id == current_user.id
+      kakomon.destroy
+    end
+  end
+  
+  def edit
+    @kakomon = Kakomon.find(params[:id])
+  end
+  
+  def update
+    kakomon = Kakomon.find(params[:id])
+    if kakomon.user_id == current_user.id
+      kakomon.update(kakomon_params)
+    end
+  end
+  
   private
   def kakomon_params
     params.permit(:prefecture, :text)

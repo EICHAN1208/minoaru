@@ -4,17 +4,17 @@
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
     <p><%= f.label :メール %><br /></p>
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    <p><%= f.email_field :email, autofocus: true, autocomplete: "email" %></p>
   </div>
 
   <div class="field">
     <p><%= f.label :パスワード %><br /></p>
-    <%= f.password_field :password, autocomplete: "current-password" %>
+    <p><%= f.password_field :password, autocomplete: "current-password" %></p>
   </div>
 
   <% if devise_mapping.rememberable? %>
     <div class="field">
-      <%= f.check_box :remember_me %>
+      <p><%= f.check_box :remember_me %></p>
       <p><%= f.label :記憶させる %></p>
     </div>
   <% end %>
