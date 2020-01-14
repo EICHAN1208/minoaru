@@ -12,9 +12,11 @@
       <% if user_signed_in? && current_user.id == kakomon.user_id %>
         <ul class="more_list">
             <li>
+              <i class="fas fa-pencil-alt"></i>
               <%= link_to '編集', "/kakomons/#{kakomon.id}/edit", method: :get %>
             </li>
             <li>
+              <i class="fas fa-trash-alt"></i>
               <%= link_to '削除', "/kakomons/#{kakomon.id}", method: :delete %>
             </li>
           </ul>
