@@ -109,7 +109,7 @@ body{
 }
 
 
-// 新規登録画面
+//新規登録画面
 
 .sign_up h2{
   text-align: center;
@@ -155,7 +155,7 @@ input#user_password_confirmation{
 }
 
 
-// ログイン画面
+//ログイン画面
 .log_in{
   
 }
@@ -169,7 +169,24 @@ input.user_email{
   font-size:3em;
 }
 
-//　投稿が完了しました
+
+.btn{
+  font-size: 20px;
+  width: 100px;
+  background: black;
+  color: white;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+
+.btn:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+
+//投稿が完了しました
 .toukou{
   text-align: center;
   margin: 40px 0px;
@@ -180,7 +197,7 @@ input.user_email{
 }
 
 
-//　更新が完了しました
+//更新が完了しました
 .kousin{
   text-align: center;
   margin: 40px 0px;
@@ -190,7 +207,7 @@ input.user_email{
   margin-bottom: 40px;
 }
 
-//　削除が完了しました
+//削除が完了しました
 .sakuzyo{
   text-align: center;
   margin: 40px 0px;
@@ -199,3 +216,6 @@ input.user_email{
 .sakuzyo h3{
   margin-bottom: 40px;
 }
+
+//投稿する
+
