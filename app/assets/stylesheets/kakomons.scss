@@ -7,7 +7,11 @@
   float: right;
 }
 
-
+// 削除、編集、投稿者の横並び
 .more_list li{
   display: inline;
+}
+
+.text{
+  word-break: break-all;
 }

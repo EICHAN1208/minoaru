@@ -1,10 +1,20 @@
-<div class="">
+<div class="content2">
   <%= form_tag("/kakomons/#{@kakomon.id}", method: :patch ) do %>
-    <h3>
+    <h2>
       編集する
-    </h3>
-    <input type="string" name="prefecture" value="<%= @kakomon.prefecture %>" placeholder="都道府県">
-    <textarea name="text" placeholder="text" rows="10" cols="30"><%= @kakomon.text %></textarea>
-    <input type="submit" value="編集" class="btn">
+    </h2>
+    
+    <div class="todouhuken">
+      <input type="string" name="prefecture" value="<%= @kakomon.prefecture %>" placeholder="都道府県" class="todouhuken1">
+    </div>
+    
+    <div class="text1">
+      <textarea name="text" placeholder="カコ問" class="text2"><%= @kakomon.text %></textarea>
+    </div>
+    
+    <div class="btn1">
+      <input type="submit" value="編集" class="btn">
+    </div>
+    
   <% end %>
 </div>

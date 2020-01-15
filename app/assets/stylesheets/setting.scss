@@ -217,5 +217,32 @@ input.user_email{
   margin-bottom: 40px;
 }
 
-//投稿する
+//投稿する,編集する
 
+.content2{
+  text-align: center;
+}
+
+.content2 h2{
+  margin: 40px;
+}
+
+.text1{
+  margin: 40px;
+}
+
+input.todouhuken1{
+  width: 200px;
+  height: 25px;
+  font-size: 20px;
+  border: solid 3px #000000;
+  border-radius: 10px;
+}
+
+textarea.text2{
+  width: 600px;
+  height: 200px;
+  font-size: 20px;
+  border: solid 3px #000000;
+  border-radius: 10px;
+}
