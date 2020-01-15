@@ -19,15 +19,13 @@
               <i class="fas fa-trash-alt"></i>
               <%= link_to '削除', "/kakomons/#{kakomon.id}", method: :delete %>
             </li>
-            
+      <% end %>
             <span class="name">
               <span>投稿者:</span><%= kakomon.user.nickname %>
             </span>
-            
-          </ul>
-      <% end %>
-      
-      
+        </ul>
+        <!--ulの位置をspanタグの下に置くことで編集、削除、投稿者の横並び指定がしやすい-->
+        <!--また投稿者の表示はログインしていなくても表示したいためspanタグはif分の外に置く-->
       
     </div>
   <% end %>

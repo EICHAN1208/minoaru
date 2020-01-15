@@ -1,7 +1,9 @@
 class KakomonsController < ApplicationController
+  before_action :move_to_index, except: :index
   
   def index
     @kakomons = Kakomon.order("created_at DESC").page(params[:page]).per(5)
+    redirect_to controller: 'tops', action: 'index' unless user_signed_in?
   end
   
   def new
@@ -33,5 +35,11 @@ class KakomonsController < ApplicationController
   def kakomon_params
     params.permit(:prefecture, :text)
   end
+  
+  def move_to_index
+    redirect_to action: :index unless user_signed_in?
+  end
+  
+  
   
 end
