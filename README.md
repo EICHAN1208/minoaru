@@ -1,24 +1,22 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+＜概要＞
+現役の消防職員向けに作成したもので、昇任試験の対策問題とその過去問を共有できるサービス
 
-Things you may want to cover:
 
-* Ruby version
 
-* System dependencies
+＜主な機能と使用技術＞
+・ログイン
+・記事投稿
+・記事の削除と編集
+・ページネーション
+・問題画面から解答ボタンを押すと解答ページに画面遷移
 
-* Configuration
 
-* Database creation
+インフラはAWSを使用しており、データベースにはMySQLを使用しています。
+またデプロイはHerokuを使用しました。
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+＜その他＞
+法律関係の難しい文章を自分なりに噛み砕いて分かりやすく問題を理解できるように出題しました。
+また実際に消防職員として勤務している人たちに使用してもらい、使用感などのフィードバックをもらい、
+実際に役立つサービスになればと機能の改善を実施中です。
