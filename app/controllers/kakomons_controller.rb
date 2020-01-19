@@ -3,7 +3,6 @@ class KakomonsController < ApplicationController
   
   def index
     @kakomons = Kakomon.order("created_at DESC").page(params[:page]).per(5)
-    redirect_to controller: 'tops', action: 'index' unless user_signed_in?
   end
   
   def new

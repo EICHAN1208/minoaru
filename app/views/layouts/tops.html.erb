@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Minoaru</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  </head>
+
+  <body>
+  <div class="wrapper">
+    <header>
+      
+      
+      
+      <h1 class="headline">
+        <a><i class="fas fa-burn"></i>やさしい炎</a><span>消防昇任試験対策</span>
+        
+      
+      
+    </header>
+    
+    <%= yield %>
+    
+    <footer>
+    <div>
+        <ul>
+          <li>Copyright (C) 2020 MURAKAMI All Rights Reserved.</li>
+        </ul>
+    </div>
+    </footer>
+  </div>
+  </body>
+</html>
