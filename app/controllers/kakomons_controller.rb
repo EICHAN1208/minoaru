@@ -30,6 +30,10 @@ class KakomonsController < ApplicationController
     end
   end
   
+  def show
+    @kakomon = Kakomon.find(params[:id])
+  end
+  
   private
   def kakomon_params
     params.permit(:prefecture, :text)

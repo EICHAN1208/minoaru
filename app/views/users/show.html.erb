@@ -9,8 +9,13 @@
         <p><%= simple_format(kakomon.text) %></p>
       </div>
       
+      
+      
       <% if user_signed_in? && current_user.id == kakomon.user_id %>
         <ul class="more_list">
+            <li>
+              <%= link_to '詳細', "/kakomons/#{kakomon.id}", method: :get %>
+            </li>
             <li>
               <i class="fas fa-pencil-alt"></i>
               <%= link_to '編集', "/kakomons/#{kakomon.id}/edit", method: :get %>
