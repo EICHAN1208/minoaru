@@ -32,6 +32,7 @@ class KakomonsController < ApplicationController
   
   def show
     @kakomon = Kakomon.find(params[:id])
+    @comments = @kakomon.comments.includes(:user) #n+1問題
   end
   
   private
