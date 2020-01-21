@@ -109,7 +109,7 @@ body{
 }
 
 
-//新規登録画面
+//新規登録画面ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 
 .sign_up h2{
   text-align: center;
@@ -155,7 +155,7 @@ input#user_password_confirmation{
 }
 
 
-//ログイン画面
+//ログイン画面ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 .log_in{
   
 }
@@ -217,7 +217,7 @@ input.user_email{
   margin-bottom: 40px;
 }
 
-//投稿する,編集する
+//投稿する,編集するーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 
 .content2{
   text-align: center;
@@ -245,4 +245,49 @@ textarea.text2{
   font-size: 20px;
   border: solid 3px #000000;
   border-radius: 10px;
+}
+
+
+//過去問投稿へのコメント機能ーーーーーーーーーーーーーーーーーーーーーーー
+textarea.text3{
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+  border: solid 2px #000000;
+  border-radius: 10px;
+}
+
+.btn2{
+  font-size: 10px;
+  width: 50px;
+  background: black;
+  color: white;
+  border-bottom: solid 3px #627295;
+  border-radius: 2px;
+}
+
+.btn2:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+
+//コメントフォームを真ん中へ
+.form{
+  text-align: center;
+}
+
+
+
+
+
+//コメント一覧のdiv要素からはみ出さないようにする処理ーーーーーーーーーーーーーーー
+.comments{
+  word-break: break-word;
+}
+
+
+.block{
+   overflow: scroll;
 }

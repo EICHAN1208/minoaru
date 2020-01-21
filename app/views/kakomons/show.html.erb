@@ -25,13 +25,15 @@
         </ul>
         
         <div class="container"> 
+          <div class="form">
             <!-- ここからフォーム -->
             <% if current_user %>
               <%= form_tag("/kakomons/#{@kakomon.id}/comments", method: :post) do %>
-                <textarea name="text" placeholder="コメントする" rows="2" cols="30"></textarea>
-                <input type="submit" value="送信">
+                <textarea name="text" placeholder="コメントする" class="text3"></textarea>
+                <input type="submit" value="送信" class="btn2">
               <% end %>
             <% end %>
+          </div>
             
             <div class="comments">   
               <h4>＜コメント一覧＞</h4>
@@ -39,6 +41,7 @@
               <% if @comments %> 
                 <% @comments.each do |comment| %>
                   <p>
+                    <!--名前をクリックするとマイページに遷移するように処理-->
                     <strong><%= link_to comment.user.nickname, "/users/#{comment.user_id}" %>：</strong>
                     <%= comment.text %>
                   </p>
