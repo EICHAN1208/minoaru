@@ -154,6 +154,14 @@ input#user_password_confirmation{
   font-size: 20px;
 }
 
+.field_with_errors{
+  text-align: center;
+}
+
+#error_explanation{
+  text-align: center;
+}
+
 
 //ログイン画面ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 .log_in{
