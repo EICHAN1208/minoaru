@@ -1,5 +1,5 @@
 class KakomonsController < ApplicationController
-  before_action :move_to_index, except: :index
+  before_action :move_to_index, except: [:index, :show] #showの追加はログインしていなくても、詳細が見れるようにするため
   
   def index
     @kakomons = Kakomon.order("created_at DESC").page(params[:page]).per(5)
