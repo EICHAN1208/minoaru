@@ -1,5 +1,5 @@
 
-<div class="content4">    
+
     <div class="content3">
       <div class="title">
         <p><%= @kakomon.prefecture %></p>
@@ -19,6 +19,7 @@
               <i class="fas fa-trash-alt"></i>
               <%= link_to '削除', "/kakomons/#{@kakomon.id}", method: :delete %>
             </li>
+      <% else %>
       <% end %>
             <span class="name">
               <span>投稿者:</span><%= @kakomon.user.nickname %>
@@ -33,6 +34,7 @@
                 <textarea name="text" placeholder="コメントする" class="text3"></textarea>
                 <input type="submit" value="送信" class="btn2">
               <% end %>
+            <% else %>
             <% end %>
           </div>
             
@@ -53,4 +55,3 @@
         </div>
         
     </div>
-</div>
