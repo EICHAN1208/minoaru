@@ -7,6 +7,7 @@
   float: right;
 }
 
+
 // 削除、編集、投稿者の横並び
 .more_list li{
   display: inline;
@@ -14,4 +15,11 @@
 
 .text{
   word-break: break-all;
+}
+
+.content3{
+  margin: 0px auto;
+  width: 700px;
+  padding-bottom: 140px; //90px分がfooterに含まれるため(50+90)pxとなる
+  padding-top: 50px;
 }
