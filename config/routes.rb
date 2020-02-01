@@ -17,7 +17,6 @@ Rails.application.routes.draw do
   #過去問に対してコメントするため、どの過去問（id）にコメントしたのか判別するためにネストさせてパスの中に[:id]を入れ込む
   
   # resources :kakomonsで下の7行分の意味をもつ
-  
   # get 'kakomons' => 'kakomons#index'
   # post  'kakomons'    =>  'kakomons#create'
   # get 'kakomons/new' => 'kakomons#new'     #過去問の投稿画面
