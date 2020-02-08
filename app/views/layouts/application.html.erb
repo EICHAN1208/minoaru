@@ -23,7 +23,7 @@
           <% if user_signed_in? %>  
             <div class="logout">
               <a href="/users/<%= current_user.id %>">マイページ</a>
-              <a class="post" href="/kakomons/new">カコ問シェア投稿</a>
+              <a class="post" href="/kakomons/new">カコ問投稿</a>
               <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
               <span><%= current_user.nickname %></span>
             </div>
@@ -39,15 +39,15 @@
       <% unless user_signed_in? %>
         <ul class="list">
           <li class="list-item"><a href="/tops">トップ</a></li>
+          <li class="list-item"><a href="/kakomons">カコ問シェア</a></li>
           <li class="list-item"><a href="/aquestions">消防法</a></li>
           <li class="list-item"><a href="/bquestions">消防組織法</a></li>
-          <li class="list-item"><a href="/kakomons">カコ問シェア</a></li>
         </ul>
         <% else %>
           <ul class="list">
+          <li class="list-item"><a href="/kakomons">カコ問シェア</a></li>
           <li class="list-item"><a href="/aquestions">消防法</a></li>
           <li class="list-item"><a href="/bquestions">消防組織法</a></li>
-          <li class="list-item"><a href="/kakomons">カコ問シェア</a></li>
         </ul>
         <% end %>
     </header>
